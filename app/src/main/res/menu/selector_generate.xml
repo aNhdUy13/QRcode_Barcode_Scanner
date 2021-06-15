@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/selecter_QR_code"
+        android:icon="@drawable/qrcode_scanned"
+        android:title="QR Code"
+        />
+
+    <item
+        android:id="@+id/selecter_Barcode"
+        android:title="Barcode"/>
+</menu>

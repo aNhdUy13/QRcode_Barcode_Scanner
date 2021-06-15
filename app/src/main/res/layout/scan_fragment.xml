@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    android:weightSum="10"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_weight="7"
+        android:weightSum="4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <LinearLayout
+            android:layout_weight="3"
+            android:weightSum="4"
+            android:orientation="vertical"
+            android:background="@drawable/shape_scan_corner"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <LinearLayout
+                android:layout_weight="0.3"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1.45"
+                android:weightSum="2"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+                <LinearLayout
+                    android:layout_weight="1.60"
+                    android:weightSum="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp">
+                    <LinearLayout
+                        android:layout_weight="0.9"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent">
+                        <ScrollView
+                            android:id="@+id/SCROLLER_ID"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:scrollbars="vertical"
+                            android:fillViewport="true">
+                            <TextView
+                                android:id="@+id/result_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/fragment_scanner_result"
+                                android:drawableLeft="@drawable/icon_result"
+                                android:textSize="20dp" />
+                        </ScrollView>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_weight="0.1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:id="@+id/copy_result_text"
+                            android:src="@drawable/icon_copy_text"
+                            android:visibility="invisible"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1.25"
+                android:weightSum="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+                <LinearLayout
+                    android:layout_weight="0.9"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+                    <ScrollView
+                        android:id="@+id/SCROLLER_ID_search"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:scrollbars="vertical"
+                        android:fillViewport="true">
+                        <TextView
+                            android:id="@+id/result_link"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Link"
+                            android:drawableLeft="@drawable/icon_link"
+                            android:textSize="20dp"
+                            android:focusable="true" />
+                    </ScrollView>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_weight="0.1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:id="@+id/copy_Link_text"
+                        android:src="@drawable/icon_copy_text"
+                        android:visibility="invisible"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+                <Button
+                    android:id="@+id/search"
+                    android:text="@string/fragment_scanner_search_google"
+                    android:backgroundTint="#20AAAA"
+                    android:fontFamily="serif"
+                    android:textSize="16dp"
+                    android:drawableLeft="@drawable/search"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <Button
+                android:id="@+id/scan_main"
+                android:text="@string/fragment_scanner_button"
+                android:backgroundTint="#2CC6C6"
+                android:fontFamily="serif"
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+
+<!--            <com.budiyev.android.codescanner.CodeScannerView-->
+<!--                android:id="@+id/scanner_view"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                app:autoFocusButtonColor="@color/white"-->
+<!--                app:autoFocusButtonVisible="true"-->
+<!--                app:flashButtonColor="@color/white"-->
+<!--                app:flashButtonVisible="true"-->
+<!--                app:maskColor="#3E3C3C"-->
+<!--                />-->
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_weight="3"
+        android:weightSum="4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <LinearLayout
+            android:layout_weight="0.3"
+            android:weightSum="2"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <LinearLayout
+                android:layout_weight="1.5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <Button
+                    android:backgroundTint="#2CC6C6"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="match_parent"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="2.5"
+            android:weightSum="2"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <LinearLayout
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/show_ads"
+                    android:text="Happy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@drawable/icon_happy"
+                    android:textSize="20dp"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/scan_fragment_scanned_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif"
+                    android:drawableTop="@drawable/icon_gallery"
+                    android:text="@string/scan_fragment_scanned_image"
+                    android:textSize="20dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+<!--        <LinearLayout-->
+<!--            android:layout_weight="1"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:gravity="center"-->
+<!--            android:layout_height="0dp">-->
+<!--            <Button-->
+<!--                android:id="@+id/scan_fragment_button_scan"-->
+<!--                android:backgroundTint="#2CC6C6"-->
+<!--                android:text="@string/fragment_scanner_button"-->
+<!--                android:textSize="27dp"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"/>-->
+
+<!--        </LinearLayout>-->
+
+        <LinearLayout
+            android:layout_weight="1.2"
+            android:weightSum="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <LinearLayout
+                android:layout_weight="0.9"
+                android:weightSum="2"
+                android:layout_width="match_parent"
+                android:gravity="center|bottom"
+                android:layout_height="0dp">
+                <LinearLayout
+                    android:id="@+id/backgroundShowAdScanFragment"
+                    android:layout_weight="1.7"
+                    android:background="#2CC6C6"
+                    android:gravity="center_horizontal|bottom"
+                    android:layout_width="0dp"
+                    android:visibility="invisible"
+                    android:layout_height="match_parent">
+                    <com.google.android.gms.ads.AdView
+                        android:id="@+id/adView_scan_fragment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentBottom="true"
+                        ads:adSize="BANNER"
+                        ads:adUnitId="@string/banner_ad_unit_id">
+                    </com.google.android.gms.ads.AdView>
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="0.1"
+                android:background="#2CC6C6"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

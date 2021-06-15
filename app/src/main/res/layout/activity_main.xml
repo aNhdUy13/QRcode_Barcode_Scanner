@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:weightSum="10"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_weight="9.1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/bottom_navi">
+
+        </androidx.viewpager.widget.ViewPager>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_weight="0.9"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navi"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            app:menu="@menu/menu_bottom_navigation"
+            app:itemIconTint="@color/custom_color_bottom_navigation"
+            app:itemTextColor="@color/custom_color_bottom_navigation"
+            >
+
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Scan QRcode and Barcode</string>
+    <string name="banner_ad_unit_id" translatable="false">ca-app-pub-1973973370482992/5294219700</string>
+    <!--
+       Test: ca-app-pub-3940256099942544/6300978111 -->
+
+    <string name="native_ad_unit_id" translatable="false"></string>
+
+    <string name="menu_qr_Scanner">Scan</string>
+    <string name="menu_qr_Generate">Generate</string>
+    <string name="menu_qr_History" translatable="false">History</string>
+
+    <string name="fragment_scanner_address" translatable="false">Scan Barcode - QR code</string>
+    <string name="scan_fragment_scanned_image">Scan Image</string>
+    <string name="fragment_scanner_button">Scan</string>
+    <string name="fragment_scanner_search_google">Search Link</string>
+    <string name="fragment_scanner_result">Result</string>
+    <string name="fragment_scanner_text_to_scan_img">Scan Image</string>
+    <string name="fragment_scanner_button_back">Back</string>
+
+    <string name="fragment_generate_content"> Input Content</string>
+    <string name="fragment_generate_button"> Generate</string>
+    <string name="fragment_generate_selecter_button">Select Type of Code to Generate</string>
+    <string name="fragment_generate_selecter_popup">Input Title</string>
+    <string name="fragment_generate_selecter_popup_save">Save Code</string>
+    <string name="fragment_generate_title_ScanWithQRCode">Generate With QR Code</string>
+    <string name="fragment_generate_title_ScanWithBarcodeCode">Generate With Barcode</string>
+
+
+    <string name="menu_Top_OwnCode_navigation">My Code</string>
+    <string name="menu_Top_History_navigation">History</string>
+
+
+</resources>

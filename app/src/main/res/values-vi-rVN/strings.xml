@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Quét Mã QR và Barcode</string>
+    <string name="menu_qr_Scanner">Quét Mã</string>
+    <string name="menu_qr_Generate">Tạo Mã</string>
+    <string name="scan_fragment_scanned_image">Quét Ảnh</string>
+    <string name="fragment_scanner_button">Quét Mã</string>
+    <string name="fragment_generate_content">Nhập Nội Dung</string>
+    <string name="fragment_generate_button">Tạo Mã</string>
+    <string name="fragment_scanner_search_google">Tìm Kiếm</string>
+    <string name="fragment_scanner_result">Kết Quả</string>
+    <string name="fragment_scanner_text_to_scan_img">Quét Ảnh</string>
+    <string name="fragment_scanner_button_back">Quay Về</string>
+    <string name="fragment_generate_selecter_button">"Chọn loại mã để tạo "</string>
+    <string name="fragment_generate_selecter_popup">Nhập Tiêu Đề</string>
+    <string name="fragment_generate_selecter_popup_save">Lưu Mã</string>
+    <string name="menu_Top_History_navigation">Lịch Sử</string>
+    <string name="menu_Top_OwnCode_navigation">Mã Sở Hữu</string>
+    <string name="fragment_generate_title_ScanWithQRCode">Tạo Với Mã QR</string>
+    <string name="fragment_generate_title_ScanWithBarcodeCode">Tạo Với Barcode</string>
+    <string name="fragment_scanner_show_ad">+ Xin Chào, Chào mừng đến với ứng dụng quét mã QR và Barcode.\\n\\n + Cảm ơn vì đã tải ứng dụng</string>
+</resources>
