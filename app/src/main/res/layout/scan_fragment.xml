@@ -260,25 +260,9 @@
                 android:layout_width="match_parent"
                 android:gravity="center|bottom"
                 android:layout_height="0dp">
-                <LinearLayout
-                    android:id="@+id/backgroundShowAdScanFragment"
-                    android:layout_weight="1.7"
-                    android:background="#2CC6C6"
-                    android:gravity="center_horizontal|bottom"
-                    android:layout_width="0dp"
-                    android:visibility="invisible"
-                    android:layout_height="match_parent">
-                    <com.google.android.gms.ads.AdView
-                        android:id="@+id/adView_scan_fragment"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_centerHorizontal="true"
-                        android:layout_alignParentBottom="true"
-                        ads:adSize="BANNER"
-                        ads:adUnitId="@string/banner_ad_unit_id">
-                    </com.google.android.gms.ads.AdView>
-                </LinearLayout>
-
+                <com.startapp.sdk.ads.banner.banner3d.Banner3D
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
             </LinearLayout>
             <LinearLayout
                 android:layout_weight="0.1"

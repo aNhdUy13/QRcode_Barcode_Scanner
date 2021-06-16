@@ -96,26 +96,15 @@
         </LinearLayout>
     </LinearLayout>
 
+
     <LinearLayout
-        android:layout_weight="0.7"
-        android:layout_width="match_parent"
-        android:background="@color/white"
-        android:layout_height="0dp"/>
-    <LinearLayout
-        android:layout_weight="0.6"
+        android:layout_weight="1.3"
         android:background="@color/white"
         android:layout_width="match_parent"
         android:gravity="center"
         android:layout_height="0dp">
-        <com.google.android.gms.ads.AdView
-            xmlns:ads="http://schemas.android.com/apk/res-auto"
-            android:id="@+id/adView_scan_img_1"
-            android:layout_width="250dp"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_alignParentBottom="true"
-            ads:adSize="BANNER"
-            ads:adUnitId="@string/banner_ad_unit_id">
-        </com.google.android.gms.ads.AdView>
+        <com.startapp.sdk.ads.banner.Banner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
     </LinearLayout>
 </LinearLayout>

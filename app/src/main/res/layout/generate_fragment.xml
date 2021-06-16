@@ -7,10 +7,7 @@
     android:theme="@style/StatusBarColor"
     >
 
-    <com.google.android.gms.ads.nativead.NativeAdView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        />
+
     <LinearLayout
         android:weightSum="10"
         android:orientation="vertical"
@@ -159,24 +156,9 @@
             android:weightSum="2"
             android:gravity="center|bottom"
             android:background="#2CC6C6">
-            <LinearLayout
-                android:id="@+id/backgroundShowAdGenerateFragment"
-                android:layout_weight="1.7"
-                android:gravity="center|bottom"
-                android:background="#21A1A1"
-                android:visibility="invisible"
-                android:layout_width="0dp"
-                android:layout_height="match_parent">
-                <com.google.android.gms.ads.AdView
-                    android:id="@+id/adView_generate_01"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerHorizontal="true"
-                    android:layout_alignParentBottom="true"
-                    ads:adSize="BANNER"
-                    ads:adUnitId="@string/banner_ad_unit_id">
-                </com.google.android.gms.ads.AdView>
-            </LinearLayout>
+            <com.startapp.sdk.ads.banner.Banner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
 
         </LinearLayout>
 

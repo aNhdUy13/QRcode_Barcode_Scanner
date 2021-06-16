@@ -17,37 +17,17 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"/>
     </LinearLayout>
+
     <LinearLayout
-        android:layout_weight="0.1"
-        android:gravity="center"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"/>
-    <LinearLayout
-        android:layout_weight="0.8"
+        android:layout_weight="0.9"
         android:weightSum="2"
         android:background="@color/white"
         android:gravity="center|bottom"
         android:layout_width="match_parent"
         android:layout_height="0dp">
-        <LinearLayout
-            android:id="@+id/backgroundShowAdOwnFragment"
-            android:visibility="invisible"
-            android:layout_weight="1.7"
-            android:background="#2CC6C6"
-            android:gravity="center_horizontal|bottom"
-            android:layout_width="0dp"
-            android:layout_height="match_parent">
-            <com.google.android.gms.ads.AdView
-                xmlns:ads="http://schemas.android.com/apk/res-auto"
-                android:id="@+id/adView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:layout_alignParentBottom="true"
-                ads:adSize="BANNER"
-                ads:adUnitId="@string/banner_ad_unit_id">
-            </com.google.android.gms.ads.AdView>
-        </LinearLayout>
+        <com.startapp.sdk.ads.banner.bannerstandard.BannerStandard
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
 
     </LinearLayout>
 
