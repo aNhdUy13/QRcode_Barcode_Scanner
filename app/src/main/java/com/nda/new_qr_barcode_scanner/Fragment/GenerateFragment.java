@@ -1,4 +1,4 @@
-package com.nda.new_qr_barcode_scanner;
+package com.nda.new_qr_barcode_scanner.Fragment;
 
 import android.app.Dialog;
 import android.content.Context;
@@ -32,6 +32,8 @@ import com.google.zxing.MultiFormatWriter;
 import com.google.zxing.WriterException;
 import com.google.zxing.common.BitMatrix;
 import com.journeyapps.barcodescanner.BarcodeEncoder;
+import com.nda.new_qr_barcode_scanner.MainActivity;
+import com.nda.new_qr_barcode_scanner.R;
 import com.startapp.sdk.adsbase.StartAppAd;
 
 import java.io.ByteArrayOutputStream;

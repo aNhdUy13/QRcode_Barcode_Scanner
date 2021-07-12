@@ -15,24 +15,23 @@
             android:weightSum="2"
             android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="350dp">
+            android:layout_height="300dp">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:gravity="center"
-                android:layout_weight="0.3">
+                android:layout_weight="0.4">
                 <TextView
                     android:id="@+id/txtTitleScanResult"
                     android:textStyle="bold"
                     android:textSize="20dp"
-                    android:text="@string/fragment_scanner_link_result"
+                    android:text="@string/fragment_scanner_text_found"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"/>
 
             </LinearLayout>
-
             <LinearLayout
-                android:layout_weight="0.6"
+                android:layout_weight="0.5"
                 android:weightSum="2"
                 android:layout_width="match_parent"
                 android:layout_height="0dp">
@@ -53,8 +52,8 @@
 
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Link"
-                            android:drawableLeft="@drawable/icon_link"
+                            android:text="Result"
+                            android:drawableLeft="@drawable/icon_result"
                             android:textSize="14dp"
                             android:focusable="true" />
                     </ScrollView>
@@ -73,12 +72,14 @@
                 </LinearLayout>
             </LinearLayout>
             <LinearLayout
+                android:id="@+id/llAds"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:gravity="center"
                 android:layout_weight="0.7"
                 android:orientation="vertical">
                 <com.startapp.sdk.ads.banner.banner3d.Banner3D
+                    android:id="@+id/bannerScanText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"/>
             </LinearLayout>

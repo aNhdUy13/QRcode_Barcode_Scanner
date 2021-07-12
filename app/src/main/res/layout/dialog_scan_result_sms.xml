@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        app:cardCornerRadius="20dp"
+        app:cardBackgroundColor="#2CC6C6"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:weightSum="2"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="300dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:gravity="center"
+                android:layout_weight="0.4">
+                <TextView
+                    android:id="@+id/txtTitleScanResult"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:text="@string/fragment_scanner_SMS_found"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="0.25"
+                android:weightSum="2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5">
+                    <TextView
+                        android:gravity="center|left"
+                        android:textSize="14dp"
+                        android:textStyle="bold"
+                        android:text="@string/fragment_scanner_SMS_phonenumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_weight="1.2"
+                    android:weightSum="2"
+                    android:layout_width="0dp"
+                    android:gravity="center"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.1">
+                        <TextView
+                            android:gravity="center"
+                            android:textSize="14dp"
+                            android:textStyle="bold"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text=":"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.9">
+
+                                    <TextView
+                                        android:id="@+id/txtGetPhoneNumber"
+                                        android:gravity="center|left"
+                                        android:text="123"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:textSize="10dp"
+                                        android:focusable="true" />
+
+
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_weight="0.3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:id="@+id/imgCopyPhone"
+                        android:padding="10dp"
+                        android:src="@drawable/icon_copy_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="0.25"
+                android:weightSum="2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5">
+                    <TextView
+                        android:gravity="center|left"
+                        android:textSize="14dp"
+                        android:textStyle="bold"
+                        android:text="@string/fragment_scanner_SMS_message"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_weight="1.2"
+                    android:weightSum="2"
+                    android:layout_width="0dp"
+                    android:gravity="center"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.1">
+                        <TextView
+                            android:gravity="center"
+                            android:textSize="14dp"
+                            android:textStyle="bold"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text=":"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.9">
+                        <ScrollView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:scrollbars="vertical"
+                            android:fillViewport="true">
+                            <GridLayout
+                                android:layout_gravity="center|left"
+                                android:columnCount="2"
+                                android:rowCount="3"
+                                android:alignmentMode="alignMargins"
+                                android:columnOrderPreserved="false"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <androidx.cardview.widget.CardView
+                                    android:backgroundTint="#2CC6C6"
+                                    app:cardCornerRadius="12dp"
+                                    android:layout_margin="12dp">
+                                    <TextView
+                                        android:id="@+id/txtSMSMessage"
+                                        android:text="Hello World"
+                                        android:gravity="center|left"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="10dp"
+                                        android:focusable="true" />
+
+                                </androidx.cardview.widget.CardView>
+                            </GridLayout>
+
+
+
+
+                        </ScrollView>
+
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_weight="0.3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:id="@+id/imgCopyMessage"
+                        android:padding="10dp"
+                        android:src="@drawable/icon_copy_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llAds"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:gravity="center"
+                android:layout_weight="0.7"
+                android:orientation="vertical">
+                <com.startapp.sdk.ads.banner.banner3d.Banner3D
+                    android:id="@+id/bannerScanText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="0.4"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+                <Button
+                    android:id="@+id/imgCall"
+                    android:text="@string/fragment_scanner_SMS_CALL"
+                    android:backgroundTint="#20AAAA"
+                    android:fontFamily="serif"
+                    android:textSize="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <Button
+                    android:id="@+id/btnCancel_result_text"
+                    android:text="Cancel"
+                    android:layout_marginLeft="10dp"
+                    android:backgroundTint="#20AAAA"
+                    android:fontFamily="serif"
+                    android:textSize="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

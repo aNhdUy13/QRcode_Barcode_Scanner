@@ -40,11 +40,11 @@
             android:value="205320530" />
 
         <activity
-            android:name="com.nda.new_qr_barcode_scanner.OwnFragment"
+            android:name="com.nda.new_qr_barcode_scanner.Fragment.OwnFragment"
             tools:ignore="Instantiatable"
             />
         <activity
-            android:name="com.nda.new_qr_barcode_scanner.GenerateFragment"
+            android:name="com.nda.new_qr_barcode_scanner.Fragment.GenerateFragment"
             android:windowSoftInputMode="adjustPan"
             tools:ignore="Instantiatable" />
 

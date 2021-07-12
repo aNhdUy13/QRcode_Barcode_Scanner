@@ -16,7 +16,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="3.5"
+            android:layout_weight="3"
             android:background="@color/white"
             android:orientation="vertical"
             android:weightSum="4">
@@ -46,9 +46,13 @@
                         android:id="@+id/gemerate_value_entered"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:padding="10dp"
+                        android:scrollbars="vertical"
+                        android:lines="50"
+                        android:gravity="top"
                         android:background="@drawable/shape_corner"
                         android:hint="@string/fragment_generate_content"
-                        android:textSize="20dp"
+                        android:textSize="15dp"
                         android:windowSoftInputMode="adjustPan" />
                 </LinearLayout>
             </LinearLayout>
@@ -64,7 +68,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="5.5"
+            android:layout_weight="5.8"
             android:background="@drawable/shape_generate_coner"
             android:orientation="vertical"
             android:weightSum="4">
@@ -149,16 +153,18 @@
             android:background="#2CC6C6">
 
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="0.8"
-            android:weightSum="2"
+            android:layout_weight="1"
+            android:background="#2CC6C6"
             android:gravity="center|bottom"
-            android:background="#2CC6C6">
+            android:weightSum="2">
+
             <com.startapp.sdk.ads.banner.Banner
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content" />
 
         </LinearLayout>
 

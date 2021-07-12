@@ -13,10 +13,18 @@
     <string name="fragment_scanner_address" translatable="false">Scan Barcode - QR code</string>
     <string name="scan_fragment_scanned_image">Scan Image</string>
     <string name="fragment_scanner_button">Scan</string>
-    <string name="fragment_scanner_search_google">Search Link</string>
+    <string name="fragment_scanner_search_google">Search</string>
     <string name="fragment_scanner_result">Result</string>
     <string name="fragment_scanner_text_to_scan_img">Scan Image</string>
     <string name="fragment_scanner_button_back">Back</string>
+    <string name="fragment_scanner_link_result">Link Found</string>
+    <string name="fragment_scanner_text_found">Text Found</string>
+    <string name="fragment_scanner_SMS_found">SMS Found</string>
+    <string name="fragment_scanner_SMS_CALL">Call</string>
+    <string name="fragment_scanner_SMS_phonenumber">Phone Number</string>
+    <string name="fragment_scanner_SMS_message">Message</string>
+
+    <string name="fragment_scanner_contact_found">Contact Found</string>
 
     <string name="fragment_generate_content"> Input Content</string>
     <string name="fragment_generate_button"> Generate</string>

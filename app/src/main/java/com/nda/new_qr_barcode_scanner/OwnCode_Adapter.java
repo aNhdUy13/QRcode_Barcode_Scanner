@@ -10,6 +10,8 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.nda.new_qr_barcode_scanner.Fragment.OwnFragment;
+
 import java.util.ArrayList;
 
 public class OwnCode_Adapter extends BaseAdapter {

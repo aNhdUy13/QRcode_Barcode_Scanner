@@ -9,7 +9,7 @@
 
     <LinearLayout
         android:orientation="vertical"
-        android:layout_weight="7"
+        android:layout_weight="6.8"
         android:weightSum="4"
         android:layout_width="match_parent"
         android:layout_height="0dp">
@@ -33,45 +33,11 @@
                 android:orientation="vertical"
                 android:layout_width="match_parent"
                 android:layout_height="0dp">
-                <LinearLayout
-                    android:layout_weight="1.60"
-                    android:weightSum="1"
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler_view"
+                    android:layout_gravity="top"
                     android:layout_width="match_parent"
-                    android:layout_height="0dp">
-                    <LinearLayout
-                        android:layout_weight="0.9"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent">
-                        <ScrollView
-                            android:id="@+id/SCROLLER_ID"
-                            android:layout_width="fill_parent"
-                            android:layout_height="wrap_content"
-                            android:scrollbars="vertical"
-                            android:fillViewport="true">
-                            <TextView
-                                android:id="@+id/result_text"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="@string/fragment_scanner_result"
-                                android:drawableLeft="@drawable/icon_result"
-                                android:textSize="20dp" />
-                        </ScrollView>
-                    </LinearLayout>
-                    <LinearLayout
-                        android:layout_weight="0.1"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent">
-                        <ImageView
-                            android:id="@+id/copy_result_text"
-                            android:src="@drawable/icon_copy_text"
-                            android:visibility="invisible"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"/>
-
-                    </LinearLayout>
-
-                </LinearLayout>
-
+                    android:layout_height="match_parent"/>
 
 
             </LinearLayout>
@@ -80,37 +46,6 @@
                 android:weightSum="1"
                 android:layout_width="match_parent"
                 android:layout_height="0dp">
-                <LinearLayout
-                    android:layout_weight="0.9"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent">
-                    <ScrollView
-                        android:id="@+id/SCROLLER_ID_search"
-                        android:layout_width="fill_parent"
-                        android:layout_height="wrap_content"
-                        android:scrollbars="vertical"
-                        android:fillViewport="true">
-                        <TextView
-                            android:id="@+id/result_link"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Link"
-                            android:drawableLeft="@drawable/icon_link"
-                            android:textSize="20dp"
-                            android:focusable="true" />
-                    </ScrollView>
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_weight="0.1"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent">
-                    <ImageView
-                        android:id="@+id/copy_Link_text"
-                        android:src="@drawable/icon_copy_text"
-                        android:visibility="invisible"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"/>
-                </LinearLayout>
 
 
 
@@ -120,15 +55,12 @@
                 android:gravity="center"
                 android:layout_width="match_parent"
                 android:layout_height="0dp">
-                <Button
-                    android:id="@+id/search"
-                    android:text="@string/fragment_scanner_search_google"
-                    android:backgroundTint="#20AAAA"
-                    android:fontFamily="serif"
-                    android:textSize="16dp"
-                    android:drawableLeft="@drawable/search"
+                <ImageView
+                    android:id="@+id/imgLight"
+                    android:src="@drawable/icon_light_off"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"/>
+
             </LinearLayout>
 
 
@@ -167,7 +99,7 @@
 
     <LinearLayout
         android:orientation="vertical"
-        android:layout_weight="3"
+        android:layout_weight="3.2"
         android:weightSum="4"
         android:layout_width="match_parent"
         android:layout_height="0dp">

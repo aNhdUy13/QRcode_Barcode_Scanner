@@ -1,4 +1,4 @@
-package com.nda.new_qr_barcode_scanner;
+package com.nda.new_qr_barcode_scanner.Fragment;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -25,6 +25,10 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 
+import com.nda.new_qr_barcode_scanner.MainActivity;
+import com.nda.new_qr_barcode_scanner.OwnCode_Adapter;
+import com.nda.new_qr_barcode_scanner.OwnConstructor;
+import com.nda.new_qr_barcode_scanner.R;
 import com.startapp.sdk.adsbase.StartAppAd;
 
 import java.util.ArrayList;
