@@ -25,13 +25,14 @@
                     android:id="@+id/txtTitleScanResult"
                     android:textStyle="bold"
                     android:textSize="20dp"
+                    android:textColor="@color/white"
                     android:text="@string/fragment_scanner_text_found"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"/>
 
             </LinearLayout>
             <LinearLayout
-                android:layout_weight="0.5"
+                android:layout_weight="1"
                 android:weightSum="2"
                 android:layout_width="match_parent"
                 android:layout_height="0dp">
@@ -71,18 +72,7 @@
                         android:layout_height="wrap_content"/>
                 </LinearLayout>
             </LinearLayout>
-            <LinearLayout
-                android:id="@+id/llAds"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:gravity="center"
-                android:layout_weight="0.7"
-                android:orientation="vertical">
-                <com.startapp.sdk.ads.banner.banner3d.Banner3D
-                    android:id="@+id/bannerScanText"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-            </LinearLayout>
+
             <LinearLayout
                 android:layout_weight="0.4"
                 android:gravity="center"

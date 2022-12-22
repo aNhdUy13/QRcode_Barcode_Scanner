@@ -16,8 +16,8 @@
     <string name="fragment_generate_selecter_popup_save">Lưu Mã</string>
     <string name="menu_Top_History_navigation">Lịch Sử</string>
     <string name="menu_Top_OwnCode_navigation">Mã Sở Hữu</string>
-    <string name="fragment_generate_title_ScanWithQRCode">Tạo Với Mã QR</string>
-    <string name="fragment_generate_title_ScanWithBarcodeCode">Tạo Với Barcode</string>
+    <string name="fragment_generate_title_ScanWithQRCode">Tạo Mã QR</string>
+    <string name="fragment_generate_title_ScanWithBarcodeCode">Tạo Mã Barcode</string>
     <string name="fragment_scanner_show_ad">+ Xin Chào, Chào mừng đến với ứng dụng quét mã QR và Barcode.\\n\\n + Cảm ơn vì đã tải ứng dụng</string>
     <string name="fragment_scanner_link_result">Link</string>
     <string name="fragment_scanner_text_found">Văn Bản</string>
@@ -26,4 +26,7 @@
     <string name="fragment_scanner_SMS_phonenumber">Số Điện Thoại</string>
     <string name="fragment_scanner_SMS_message">Tin Nhắn</string>
     <string name="fragment_scanner_SMS_CALL">Gọi Điện</string>
+    <string name="type_of_code">Loại mã</string>
+    <string name="code_scanned">Mã được quét</string>
+    <string name="scanned_content">"Nội dung quét được : "</string>
 </resources>

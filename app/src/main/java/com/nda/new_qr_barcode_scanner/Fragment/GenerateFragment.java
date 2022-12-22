@@ -1,24 +1,19 @@
 package com.nda.new_qr_barcode_scanner.Fragment;
 
 import android.app.Dialog;
-import android.content.Context;
-import android.content.SharedPreferences;
 import android.content.pm.ActivityInfo;
 import android.graphics.Bitmap;
 import android.graphics.Color;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.PopupMenu;
 import android.widget.Toast;
 
@@ -34,7 +29,6 @@ import com.google.zxing.common.BitMatrix;
 import com.journeyapps.barcodescanner.BarcodeEncoder;
 import com.nda.new_qr_barcode_scanner.MainActivity;
 import com.nda.new_qr_barcode_scanner.R;
-import com.startapp.sdk.adsbase.StartAppAd;
 
 import java.io.ByteArrayOutputStream;
 import java.util.regex.Matcher;
@@ -59,7 +53,7 @@ public class GenerateFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.generate_fragment, container, false);
+        View view = inflater.inflate(R.layout.fragment_generate, container, false);
         //ActivityCompat.requestPermissions(Objects.requireNonNull(getActivity()),new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE}, 1);
         //ActivityCompat.requestPermissions(Objects.requireNonNull(getActivity()),new String[]{Manifest.permission.READ_EXTERNAL_STORAGE}, 1);
 
@@ -126,7 +120,6 @@ public class GenerateFragment extends Fragment {
                     bitmap = barcodeEncoder.createBitmap(bitMatrix);
                     imgGetImgGenerate.setImageBitmap(bitmap);
                     imgDownLoad.setVisibility(View.VISIBLE);
-                    StartAppAd.showAd(getContext());
 
                     imgDownLoad.setOnClickListener(new View.OnClickListener() {
                         @Override
@@ -157,7 +150,6 @@ public class GenerateFragment extends Fragment {
 
 
                 imgDownLoad.setVisibility(View.VISIBLE);
-                StartAppAd.showAd(getContext());
 
                 imgDownLoad.setOnClickListener(new View.OnClickListener() {
                     @Override
@@ -184,14 +176,8 @@ public class GenerateFragment extends Fragment {
         resized.compress(Bitmap.CompressFormat.PNG, 100, byteArrayOutputStream);
         hinhAnh =byteArrayOutputStream.toByteArray();
 
-        btnCloseDialog = (ImageView) popupDialog.findViewById(R.id.close_dialog);
         btnSaveCode    = (Button) popupDialog.findViewById(R.id.save_in_popup);
-        btnCloseDialog.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                popupDialog.dismiss();
-            }
-        });
+
         btnSaveCode.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -209,13 +195,12 @@ public class GenerateFragment extends Fragment {
     }
     private void save_with_interstial()
     {
-        MainActivity.database.INSERT_OwnCode(
+        MainActivity.database.INSERT_SAVED_CODE(
             getStoreTitle,
             hinhAnh
          );
         Toast.makeText(getContext(),"Image saved !",Toast.LENGTH_SHORT).show();
         popupDialog.dismiss();
-        StartAppAd.showAd(getContext());
 
 
     }

@@ -3,15 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.nda.new_qr_barcode_scanner">
 
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
-    <uses-permission android:name="android.permission.BLUETOOTH" />
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
-
     <uses-permission android:name="android.permission.CAMERA" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
     <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
@@ -20,27 +12,26 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/main_icon"
+        android:icon="@mipmap/ic_mainn"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/main_icon_round"
+        android:roundIcon="@mipmap/ic_mainn_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.QR_Barcode_Scanner">
         <activity
             android:name="com.nda.new_qr_barcode_scanner.MainActivity"
             android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar"
-            android:windowSoftInputMode="adjustPan">
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="reversePortrait"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <meta-data
-            android:name="com.startapp.sdk.APPLICATION_ID"
-            android:value="205320530" />
 
         <activity
-            android:name="com.nda.new_qr_barcode_scanner.Fragment.OwnFragment"
+            android:name="com.nda.new_qr_barcode_scanner.Fragment.SavedCode.FragmentSavedCode"
             tools:ignore="Instantiatable"
             />
         <activity
@@ -59,19 +50,12 @@
 
 
         <activity
-            android:name="com.nda.new_qr_barcode_scanner.CaptureAct"
+            android:name="com.nda.new_qr_barcode_scanner.Fragment.Scanner.CaptureAct"
             android:screenOrientation="fullSensor"
             android:stateNotNeeded="true"
             android:windowSoftInputMode="stateAlwaysHidden"
             tools:replace="screenOrientation" />
 
-        <receiver
-            android:name="com.startapp.sdk.adsbase.remoteconfig.BootCompleteListener"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.BOOT_COMPLETED" />
-            </intent-filter>
-        </receiver>
     </application>
 
 </manifest>

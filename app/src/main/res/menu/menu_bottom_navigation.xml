@@ -4,11 +4,11 @@
 
     <item android:id="@+id/generate_qr"
         android:title="@string/menu_qr_Generate"
-        android:icon="@drawable/generate_qr_code"/>
+        android:icon="@drawable/ic_baseline_add_box_512"/>
 
     <item android:id="@+id/scan_qr"
         android:title="@string/menu_qr_Scanner"
-        android:icon="@drawable/scan_qr_code"/>
+        android:icon="@drawable/ic_baseline_qr_code_scanner_512"/>
 
     <item
         android:id="@+id/Onw_qr"

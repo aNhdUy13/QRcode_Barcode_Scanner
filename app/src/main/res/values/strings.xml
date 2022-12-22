@@ -26,17 +26,21 @@
 
     <string name="fragment_scanner_contact_found">Contact Found</string>
 
-    <string name="fragment_generate_content"> Input Content</string>
+    <string name="fragment_generate_content">Generated Content</string>
     <string name="fragment_generate_button"> Generate</string>
     <string name="fragment_generate_selecter_button">Select Type of Code to Generate</string>
+    <string name="type_of_code">Type of Code</string>
     <string name="fragment_generate_selecter_popup">Input Title</string>
     <string name="fragment_generate_selecter_popup_save">Save Code</string>
-    <string name="fragment_generate_title_ScanWithQRCode">Generate With QR Code</string>
-    <string name="fragment_generate_title_ScanWithBarcodeCode">Generate With Barcode</string>
+    <string name="fragment_generate_title_ScanWithQRCode">Generate QR Code</string>
+    <string name="fragment_generate_title_ScanWithBarcodeCode">Generate Barcode</string>
 
 
     <string name="menu_Top_OwnCode_navigation">My Code</string>
     <string name="menu_Top_History_navigation">History</string>
 
+    <string name="code_scanned">Code Scanned</string>
+
+    <string name="scanned_content">Scanned content : </string>
 
 </resources>

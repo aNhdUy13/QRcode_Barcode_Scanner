@@ -34,15 +34,28 @@ public class db extends SQLiteOpenHelper {
 
     }
 
-    public void INSERT_OwnCode(String title, byte[] img_own)
+    public void INSERT_SAVED_CODE(String title, byte[] img_own)
     {
         SQLiteDatabase database  = getWritableDatabase();
-        String sql = "INSERT INTO CodeTable VALUES(null,?,?)";
+        String sql = "INSERT INTO TableSavedCode VALUES(null,?,?)";
         SQLiteStatement statement =database.compileStatement(sql);
         statement.clearBindings();
 
         statement.bindString(1,title);
         statement.bindBlob(2,img_own);
+
+        statement.executeInsert();
+    }
+
+    public void INSERT_CODE_SCANNED(String content, String time)
+    {
+        SQLiteDatabase database  = getWritableDatabase();
+        String sql = "INSERT INTO TableCodeScanned VALUES(null,?,?)";
+        SQLiteStatement statement =database.compileStatement(sql);
+        statement.clearBindings();
+
+        statement.bindString(1,content);
+        statement.bindString(2,time);
 
         statement.executeInsert();
     }

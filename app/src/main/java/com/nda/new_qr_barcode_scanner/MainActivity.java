@@ -9,9 +9,6 @@ import android.os.Bundle;
 import android.view.MenuItem;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-import com.google.firebase.analytics.FirebaseAnalytics;
-import com.startapp.sdk.adsbase.StartAppAd;
-import com.startapp.sdk.adsbase.StartAppSDK;
 
 public class MainActivity extends AppCompatActivity {
     public BottomNavigationView navigationView;
@@ -20,29 +17,21 @@ public class MainActivity extends AppCompatActivity {
 
 
     String db_Name = "QRcode_BarCode_Scanner.sqlite";
-    public static String db_table ="CodeTable";
-    public static String db_table_history = "HistoryTable";
-    private FirebaseAnalytics mFirebaseAnalytics;
+    public static String table_saved_code ="TableSavedCode";
+    public static String table_code_scanned = "TableCodeScanned";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        //StartAppSDK.setTestAdsEnabled(true);
-        //StartAppSDK.init(this, "205422766", true);
-        StartAppAd.disableSplash();
-        // Obtain the FirebaseAnalytics instance.
-        mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
-        // [END shared_app_measurement]
+
 
         database = new db(this,db_Name,null,1);
-        database.QueryData("CREATE TABLE IF NOT EXISTS "+ db_table + "(Id INTEGER PRIMARY KEY AUTOINCREMENT," +
-                "storedTitle VARCHAR(200), storedImage BLOB)");
+        database.QueryData("CREATE TABLE IF NOT EXISTS "+ table_saved_code + "(Id INTEGER PRIMARY KEY AUTOINCREMENT," +
+                "savedTitle VARCHAR(200), savedImg BLOB)");
 
-//        database.QueryData("CREATE TABLE IF NOT EXISTS " + db_table_history + "Id_History PRIMARY KEY AUTOINCREMENT," +
-//                "History_Date TEXT, History_Image BLOB");
-        //database.QueryData("DROP TABLE IF EXISTS " + db_table);
-
+        database.QueryData("CREATE TABLE IF NOT EXISTS "+ table_code_scanned + "(Id INTEGER PRIMARY KEY AUTOINCREMENT," +
+                "scannedContent VARCHAR(200), scannedDate VARCHAR(200) )");
 
         selectedBottomNavigation();
         setUpViewPager();

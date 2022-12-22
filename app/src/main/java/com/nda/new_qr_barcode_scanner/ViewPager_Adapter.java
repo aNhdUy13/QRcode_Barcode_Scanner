@@ -6,8 +6,8 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentStatePagerAdapter;
 
 import com.nda.new_qr_barcode_scanner.Fragment.GenerateFragment;
-import com.nda.new_qr_barcode_scanner.Fragment.OwnFragment;
-import com.nda.new_qr_barcode_scanner.Fragment.ScanFragment;
+import com.nda.new_qr_barcode_scanner.Fragment.SavedCode.FragmentSavedCode;
+import com.nda.new_qr_barcode_scanner.Fragment.Scanner.ScanFragment;
 
 public class ViewPager_Adapter extends FragmentStatePagerAdapter {
     public ViewPager_Adapter(@NonNull FragmentManager fm, int behavior) {
@@ -24,7 +24,7 @@ public class ViewPager_Adapter extends FragmentStatePagerAdapter {
             case 1:
                 return new ScanFragment();
             case 2:
-                return new OwnFragment();
+                return new FragmentSavedCode();
             default:
                 return new ScanFragment();
 
